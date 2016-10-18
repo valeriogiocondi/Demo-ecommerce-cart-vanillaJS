@@ -1,0 +1,396 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+}
+
+.main-header .menu {
+	margin: 20px 0px;
+}
+.main-header .menu .change-view {
+	margin-right: 20px;
+	font-size: 0px;
+}
+.main-header .menu .change-view button {
+	padding: 6px 10px;
+	color: #1B4A96;
+	background-color: transparent;
+}
+.main-header .menu .change-view button:hover {
+	color: #AAA;
+	
+	transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+}
+.main-header .menu .change-view i {
+	font-size: 14px;
+}
+
+.main-article #products-list .product {
+	border: solid 1px #AAA;
+	display: inline-block;
+	overflow: hidden;
+}
+.main-article #products-list .product .image {
+	overflow: hidden;
+}
+.main-article #products-list .product .image img {
+	width: 100%;
+	height: auto;
+}
+.main-article #products-list .product .info {
+	padding: 10px;
+}
+.main-article #products-list .product .name {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.main-article #products-list.list-view .product {
+	width: 100%;
+}
+.main-article #products-list.grid-view .product .button {
+	width: 100%;
+	margin: 10px 0px 0px 0px;
+}
+ 
+#cart-list {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #FFF;
+	overflow-y: scroll;
+	z-index: 2;
+}
+#cart-list .content > header h1 {
+	margin-top: 30px;
+}
+#cart-list .content > header .button {
+	padding: 7px 16px;
+	margin: 33px 0px 0px 0px;
+}
+#cart-list .content > section .table-list .product {
+	padding: 20px 0px;
+	border-bottom: solid 1px #DDD;
+}
+#cart-list .content > section .table-list .product .thumb-image {
+	width: 100px;
+	height: 150px;
+	overflow: hidden;
+	margin-right: 20px;
+}
+#cart-list .content > section .table-list .product .thumb-image img {
+	width: 100%;
+}
+#cart-list .content > section .table-list .product .name {
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-weight: 700;
+}
+#cart-list .content > section .table-list .product .price {
+	font-size: 14px;
+}
+#cart-list .content > section .table-list .product .remove {
+	margin-top: 85px;
+	font-size: 12px;
+}
+
+/*
+*		RESET
+*/
+
+.responsive {
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+ul li {
+	list-style: none;
+}
+.list	li {
+	display: inline-block;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clearfix	{
+	clear: both;
+}
+.button {
+	padding: 7px 10px;
+	color: #FFF;
+	background-color: #1B4A96;
+	border: 0;
+	cursor: pointer;
+}
+.button:hover {
+	background-color: #153569;
+
+	transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+}
+button.link {
+	padding: 0px;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+}
+.underline-hover:hover {
+	text-decoration: underline;
+}
+.col {
+	display: inline-block;
+}
+.top {
+	vertical-align: top;
+}
+.fade {
+	visibility: hidden;
+	opacity: 0;
+}
+.fadeIn {
+	visibility: visible;
+	opacity: 1;
+
+	transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (min-width :1224px) {
+
+	.responsive {
+		width: 1180px;
+	}
+	.main-article #products-list.grid-view .product {
+		width: 283px;
+		height: 340px;
+		margin: 0px 13px 30px 0px;
+	}
+	.main-article #products-list.grid-view .product:nth-child(4n) {
+		margin-right: 0px;
+	}
+	.main-article #products-list.grid-view .product .image {
+		width: 100%;
+		height: 240px;
+	}
+	.main-article #products-list.list-view .product {
+		height: 300px;
+		margin: 0px 0px 20px 0px;
+	}
+	.main-article #products-list.list-view .product .image {
+		width: 300px;
+		height: 300px;
+		display: inline-block;
+	}
+	.main-article #products-list.list-view .product .info {
+		width: 300px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.main-article #products-list.list-view .product .name {
+		font-size: 20px;
+	}
+	.main-article #products-list.list-view .product .price {
+		margin: 10px 0px 175px 0px;
+		font-size: 18px;
+	}
+}
+
+		
+/* Desktops and laptops ----------- */
+@media only screen and (min-width :1024px) and (max-width : 1224px) {
+
+	.responsive {
+		width: 980px;
+	}
+	.main-article #products-list.grid-view .product {
+		width: 283px;
+		height: 340px;
+		margin: 0px 62px 40px 0px;
+	}
+	.main-article #products-list.grid-view .product:nth-child(3n) {
+		margin-right: 0px;
+	}
+	.main-article #products-list.grid-view .product .image {
+		width: 100%;
+		height: 240px;
+	}
+	.main-article #products-list.list-view .product {
+		height: 300px;
+		margin: 0px 0px 20px 0px;
+	}
+	.main-article #products-list.list-view .product .image {
+		width: 283px;
+		height: 300px;
+		display: inline-block;
+	}
+	.main-article #products-list.list-view .product .info {
+		width: 300px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.main-article #products-list.list-view .product .name {
+		font-size: 20px;
+	}
+	.main-article #products-list.list-view .product .price {
+		margin: 10px 0px 175px 0px;
+		font-size: 18px;
+	}
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+	.responsive {
+		width: 720px;
+	}
+	.main-article #products-list.grid-view .product {
+		width: 230px;
+		height: 300px;
+		margin: 0px 12px 15px 0px;
+	}
+	.main-article #products-list.grid-view .product:nth-child(3n) {
+		margin-right: 0px;
+	}
+	.main-article #products-list.grid-view .product .image {
+		width: 100%;
+		height: 200px;
+	}
+	.main-article #products-list.list-view .product {
+		height: 300px;
+		margin: 0px 0px 20px 0px;
+	}
+	.main-article #products-list.list-view .product .image {
+		width: 283px;
+		height: 300px;
+		display: inline-block;
+	}
+	.main-article #products-list.list-view .product .info {
+		width: 300px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.main-article #products-list.list-view .product .name {
+		font-size: 20px;
+	}
+	.main-article #products-list.list-view .product .price {
+		margin: 10px 0px 175px 0px;
+		font-size: 18px;
+	}
+}
+
+	
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+
+	.responsive {
+		width: 450px;
+	}
+	.main-article #products-list.grid-view .product {
+		width: 215px;
+		height: 300px;
+		margin: 0px 16px 20px 0px;
+	}
+	.main-article #products-list.grid-view .product:nth-child(2n) {
+		margin-right: 0px;
+	}
+	.main-article #products-list.grid-view .product .image {
+		width: 100%;
+		height: 200px;
+	}
+	.main-article #products-list.list-view .product {
+		height: 300px;
+		margin: 0px 0px 20px 0px;
+	}
+	.main-article #products-list.list-view .product .image {
+		width: 250px;
+		height: 300px;
+		display: inline-block;
+	}
+	.main-article #products-list.list-view .product .info {
+		width: 150px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.main-article #products-list.list-view .product .name {
+		font-size: 20px;
+	}
+	.main-article #products-list.list-view .product .price {
+		margin: 10px 0px 175px 0px;
+		font-size: 18px;
+	}
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+	.responsive {
+		width: 280px;
+	}
+	.main-article #products-list.grid-view .product {
+		width: 280px;
+		height: 340px;
+		margin: 0px 0px 30px 0px;
+	}
+	.main-article #products-list .product .image {
+		width: 100%;
+		height: 243px;
+	}
+	.main-article #products-list.list-view .product {
+		width: 280px;
+		height: 340px;
+		margin: 0px 0px 30px 0px;
+	}
+	.main-article #products-list .product .button {
+		width: 100%;
+		margin: 10px 0px 0px 0px;
+	}
+}
+
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 320px) {
+
+	.responsive {
+		width: 270px;
+	}
+	.main-article #products-list.grid-view .product {
+		width: 270px;
+		height: 340px;
+		margin: 0px 0px 30px 0px;
+	}
+	.main-article #products-list .product .image {
+		width: 100%;
+		height: 243px;
+	}
+	.main-article #products-list.list-view .product {
+		width: 270px;
+		height: 340px;
+		margin: 0px 0px 30px 0px;
+	}
+	.main-article #products-list .product .button {
+		width: 100%;
+		margin: 10px 0px 0px 0px;
+	}
+}
+
