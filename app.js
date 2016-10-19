@@ -29,6 +29,8 @@ var ecommerce = function() {
 		    istance.closeCartList("pushstate");
 		});
 
+		
+		
 		window.addEventListener('popstate', function(event) {
 
 			if (location.href.endsWith("cart/"))
@@ -52,7 +54,7 @@ var ecommerce = function() {
 		istance.openCartList = function() {
 
 			if (arguments.length > 0)
-				window.history.pushState({}, "", "/ex-machina/cart/");
+				window.history.pushState({}, "", "/Demo-ecommerce-cart-vanillaJS/cart/");
 
 			document.getElementsByTagName("body")[0].style.overflowY = "hidden";
 			document.getElementById("cart-list").classList.add("fadeIn");
@@ -61,7 +63,7 @@ var ecommerce = function() {
 		istance.closeCartList = function() {
 
 			if (arguments.length > 0)
-				window.history.pushState({}, "", "/ex-machina/");
+				window.history.pushState({}, "", "/Demo-ecommerce-cart-vanillaJS/");
 
 			document.getElementById("cart-list").classList.remove("fadeIn");
 			document.getElementsByTagName("body")[0].style.overflowY = "visible";
